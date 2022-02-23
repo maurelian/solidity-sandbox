@@ -4,6 +4,8 @@ pragma solidity 0.8.11;
 import "ds-test/test.sol";
 import './console.sol';
 
+// A test to see if structs are efficient for use as calldata
+
 contract Data3 {
   struct Args {
     bytes14 padding;
