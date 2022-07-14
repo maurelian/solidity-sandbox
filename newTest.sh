@@ -11,13 +11,13 @@ for file in $(ls src/test/*.sol) ; do
         # get the number
         new_num=$prefix
     fi
-    echo "new_num: $new_num"
 
     # compare new_num to num
     if [ $new_num -gt $num ] ; then
         num=$new_num
     fi
 done
+num=$((num+1))
 
 # get input for new test
 echo "Enter name of new test: "
