@@ -24,8 +24,11 @@ echo "Enter name of new test: "
 read newTest
 # touch src/test/$new_test.sol
 
+newfile="src/test/${num}_${newTest}.sol"
+
 cat src/test/0_Template.t.sol \
   | sed "s/TestX/Test$num/g" \
   | sed "s/test_X/test_$newTest/g" \
-  > "src/test/${num}_${newTest}.sol"
+  > $newfile
 
+echo $newfile
