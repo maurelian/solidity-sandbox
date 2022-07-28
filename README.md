@@ -13,10 +13,10 @@ future reference. Specific test contracts can be called with
 I don't want to have to think about avoiding contract naming collision, so each new test file
 is prefixed with a number, and all the contract names in that file have that same number as a suffix.
 
-There's now a script to generate a new file with a contract and empty test function. Just run:
+There's now a script to generate a new file with a contract and empty test function. Just run the following replacing <test_name> with the test name.  Or omit the test name for _interactive mode_.
 
 ```sh
-./newTest.sh
+./newTest.sh <test name>
 ```
 
 ## Yul code
@@ -31,3 +31,16 @@ forge inspect Target16 ir >! ir/bytesArgLenCheck16.yul.sol
 ```
 
 Yul code can be compiled with `solc --strict-assembly`.
+
+
+## Advanced Installation Tip
+You can create a bash function that will change directories, call newTest, and open VSCode.
+Add it to your `.bashrc` file so you can call `scratch` from anywhere!
+
+```bash
+scratch() {
+  cd <path to solidity-sandbox>
+  bash newTest.sh $1
+  code .
+}
+```
