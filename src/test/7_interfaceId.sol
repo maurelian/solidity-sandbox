@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.14;
+pragma solidity 0.8.15;
 
-import "ds-test/test.sol";
+import "forge-std/Test.sol";
 
 interface Foo {
     function x() external;
@@ -23,7 +23,7 @@ contract AccessBarX {
 }
 
 
-contract Test_InterfaceId is DSTest {
+contract Test_InterfaceId is Test {
 
   function test_IdGeneration() public {
 
