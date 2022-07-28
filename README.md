@@ -4,16 +4,17 @@ understanding solidity toy code.
 ## Conventions
 
 The whole purpose of this repo is to make it fast and easy to test stuff, and then keep the test code for
-future reference. Specific test contracts can be called with
+future reference. Specific test contracts can be chosen for testing.  Replace `<contract name>` with full or partial contract name:
 
-`forge test --match-contract Test3` or even just `forge test --mc 3`
+`forge test --match-contract <contract name>` or `forge test --mc <contract name>`
+
 
 ## Creating a new test
 
 I don't want to have to think about avoiding contract naming collision, so each new test file
 is prefixed with a number, and all the contract names in that file have that same number as a suffix.
 
-There's now a script to generate a new file with a contract and empty test function. Just run the following replacing <test_name> with the test name.  Or omit the test name for _interactive mode_.
+There's now a script to generate a new file with a contract and empty test function. Just run the following replacing `<test_name>` with the name of your test (file naming conventions apply, avoid spaces).  Or omit the test name to invoke _interactive mode_.
 
 ```sh
 ./newTest.sh <test name>
