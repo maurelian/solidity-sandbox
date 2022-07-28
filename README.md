@@ -35,13 +35,12 @@ Yul code can be compiled with `solc --strict-assembly`.
 
 
 ## Advanced Installation Tip
-You can create a bash function that will change directories, call newTest, and open VSCode.
+You can create a bash function that will change directories and call newTest.
 Add it to your `.bashrc` file so you can call `scratch` from anywhere!
 
 ```bash
 scratch() {
   cd <path to solidity-sandbox>
   bash newTest.sh $1
-  code .
 }
 ```
