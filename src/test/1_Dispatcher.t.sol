@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.11;
 
-import "ds-test/test.sol";
+import "forge-std/Test.sol";
 
-contract Dispatcher is DSTest {
+contract Dispatcher is Test {
   // This contract is a useful case study for exposing the use of the binary search in solidity's
   // dispatcher. If there are 4 functions or less, the search is just linear, above that threshold
   // binary search is used.

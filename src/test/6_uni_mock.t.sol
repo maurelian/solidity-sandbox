@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.11;
 
-import {DSTest} from "../../lib/ds-test/src/test.sol";
-import {Vm} from "../../lib/forge-std/src/Vm.sol";
+import "forge-std/Test.sol";
+
 import {console} from "../../lib/forge-std/src/console.sol";
 
 interface ERC20 {
@@ -50,8 +50,8 @@ contract UniMock {
   }
 }
 
-contract Test6 is DSTest {
-  Vm vm = Vm(HEVM_ADDRESS);
+contract Test6 is Test {
+
   UniMock u;
 
   constructor() {

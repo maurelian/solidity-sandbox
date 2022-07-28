@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.14;
+pragma solidity 0.8.15;
 
-import {DSTest} from "../../lib/ds-test/src/test.sol";
-import {Vm} from "../../lib/forge-std/src/Vm.sol";
+import "forge-std/Test.sol";
 
-contract Test10 is DSTest {
-  Vm vm = Vm(HEVM_ADDRESS);
+
+contract Test10 is Test {
+
 
   function test_bitwiseStuff() external {
     bytes32 a = bytes32(uint256(0xffffff));
