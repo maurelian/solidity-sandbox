@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.10;
 
-import "ds-test/test.sol";
+import "forge-std/Test.sol";
 
 // A demonstration of the fact that logging info as indexed ('topics') is
 // almost always cheaper than otherwise (as data).

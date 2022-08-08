@@ -1,11 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.14;
+pragma solidity 0.8.15;
+import "forge-std/Test.sol";
 
-import {DSTest} from "../../lib/ds-test/src/test.sol";
-import {Vm} from "../../lib/forge-std/src/Vm.sol";
-
-contract TestX is DSTest {
-    Vm vm = Vm(HEVM_ADDRESS);
+contract TestX is Test {
 
     function test_X() external {
 

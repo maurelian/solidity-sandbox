@@ -19,10 +19,13 @@ for file in $(ls src/test/*.sol) ; do
 done
 num=$((num+1))
 
-# get input for new test
-echo "Enter name of new test: "
-read newTest
-# touch src/test/$new_test.sol
+if [[ $1 ]] ; then
+    newTest=$1
+else
+    # get input for new test
+    echo "Enter name of new test: "
+    read newTest
+fi
 
 newfile="src/test/${num}_${newTest}.sol"
 
@@ -31,4 +34,10 @@ cat src/test/0_Template.t.sol \
   | sed "s/test_X/test_$newTest/g" \
   > $newfile
 
-echo $newfile
+echo
+echo New test created: ${newTest}
+echo
+echo "To run tests:"
+echo "forge test --mc Test${num}"
+
+code . ${newfile}

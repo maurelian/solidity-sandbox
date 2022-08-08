@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.14;
+pragma solidity 0.8.15;
 
-import {DSTest} from "../../lib/ds-test/src/test.sol";
-import {Vm} from "../../lib/forge-std/src/Vm.sol";
+import "forge-std/Test.sol";
 
-contract Test12_yulCoverage is DSTest {
+
+contract Test12_yulCoverage is Test {
   // forge coverage chokes when the body of this function uncommented
   function test12_assemblyIf() external {
     // uint val;
