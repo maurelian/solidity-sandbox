@@ -29,7 +29,7 @@ contract Test11 is Test {
 }
 
 contract Target {
-    function foo(bytes32 blockHash, uint256 blockNumber) public {
+    function foo(bytes32 blockHash, uint256 blockNumber) public view {
         console.log("blockNumber", blockNumber);
         console.log("blockhash(blockNumber)");
         console.logBytes32(blockhash(blockNumber));

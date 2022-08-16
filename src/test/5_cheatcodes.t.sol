@@ -7,7 +7,7 @@ import "forge-std/console.sol";
 // A test to see if structs are efficient for use as calldata
 
 contract Target {
-    function foo() external {
+    function foo() external view {
         console.log(block.timestamp);
     }
 }

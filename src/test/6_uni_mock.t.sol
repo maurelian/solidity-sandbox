@@ -48,6 +48,7 @@ contract UniMock {
     if (response.callState == CallState.Reverts) revert(string(response.responseData));
     revert CallNotFound(call);
   }
+  receive() payable external {}
 }
 
 contract Test6 is Test {
