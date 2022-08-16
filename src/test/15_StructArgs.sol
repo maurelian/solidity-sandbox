@@ -9,7 +9,7 @@ contract Test15 is Test {
 
     Target15 target = new Target15();
 
-    function test_StructArgs() external {
+    function test_StructArgs() external view {
         uint256 a = 1;
         uint256 b = 2;
         uint256 c = 3;
@@ -18,7 +18,7 @@ contract Test15 is Test {
         target.fooStructArgs(Target15.A(a, b, c, d, e));
     }
 
-    function test_NormalArgs() external {
+    function test_NormalArgs() external view {
         uint256 a = 1;
         uint256 b = 2;
         uint256 c = 3;
@@ -38,7 +38,7 @@ contract Target15 {
     }
 
     // gas: 9815
-    function fooStructArgs(A calldata _a) public {
+    function fooStructArgs(A calldata _a) public view {
         console.log(_a.a);
         console.log(_a.b);
         console.log(_a.c);
@@ -53,7 +53,7 @@ contract Target15 {
         uint256 _c,
         uint256 _d,
         uint256 _e
-    ) public {
+    ) public view {
         console.log(_a);
         console.log(_b);
         console.log(_c);

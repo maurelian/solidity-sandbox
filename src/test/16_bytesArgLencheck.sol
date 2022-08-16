@@ -68,7 +68,7 @@ contract Test16 is Test {
 contract Target16 {
     // writing this to get the IR for the function to see if there is a check to ensure the
     // length of the data is correct in the abi encoding.
-    function foo(bytes calldata _message) external returns (uint256) {
+    function foo(bytes calldata _message) external view returns (uint256) {
         console.log('foo: message');
         console.logBytes(msg.data);
         console.log(_message.length);

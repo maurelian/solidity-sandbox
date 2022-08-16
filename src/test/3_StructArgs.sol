@@ -15,13 +15,13 @@ contract Data3 {
 
 contract Target3 is Data3 {
 
-  function submitBytes32Compressed(bytes32 args) external {
+  function submitBytes32Compressed(bytes32) external view {
     console.log(msg.data.length); // 36
     console.logBytes(msg.data);
   }
 
   // can you compress data by using a struct for an arg?
-  function submitStrArgs(Args calldata args) external {
+  function submitStrArgs(Args calldata) external view {
     console.log(msg.data.length); // 100
     console.logBytes(msg.data);
   }
@@ -35,11 +35,11 @@ contract Test3 is Data3 {
         t = new Target3();
     }
 
-    function test_1() external {
+    function test_1() external view {
       t.submitBytes32Compressed(foo);
     }
 
-    function test_2() external {
+    function test_2() external view {
       Args memory a = Args({
         padding: 0xffffffffffffffffffffffffffff,
         shortenedAmount: 0xffffffffffffffffffffffffffffffff,

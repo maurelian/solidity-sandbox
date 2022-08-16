@@ -19,7 +19,7 @@ contract Test12_yulCoverage is Test {
   // coverage is fine with this
   function test12_assemblyNoIf() external {
     uint val;
-    uint a;
+    // uint a;  // commented out to suppress warning
     assembly {
         val := 1
     }
