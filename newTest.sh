@@ -27,6 +27,8 @@ else
     read newTest
 fi
 
+# Replace spaces with _
+newTest=${newTest// /_}
 newfile="src/test/${num}_${newTest}.sol"
 
 cat src/test/0_Template.t.sol \
