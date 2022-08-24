@@ -1,6 +1,10 @@
 Just a simple [forge](https://book.getfoundry.sh/forge/) based repo for playing around with and 
 understanding solidity toy code.
 
+See how other's are using it: 
+- [maurelian's branch](https://github.com/maurelian/solidity-sandbox/tree/maurelian)
+- [DevTooligan's fork](https://github.com/devtooligan/solidity-sandbox)
+
 ## Conventions
 
 The whole purpose of this repo is to make it fast and easy to test stuff, and then keep the test code for
