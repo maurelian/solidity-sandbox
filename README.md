@@ -3,7 +3,7 @@ understanding solidity toy code.
 
 See how other's are using it: 
 - [maurelian's branch](https://github.com/maurelian/solidity-sandbox/tree/maurelian)
-- [DevTooligan's fork](https://github.com/devtooligan/solidity-sandbox)
+- [devtooligan's fork](https://github.com/devtooligan/solidity-sandbox)
 
 ## Conventions
 
