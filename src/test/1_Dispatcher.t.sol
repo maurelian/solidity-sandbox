@@ -3,7 +3,8 @@ pragma solidity 0.8.11;
 
 import "forge-std/Test.sol";
 
-contract Dispatcher is Test {
+// An example of how you might use this sandbox
+contract Test1 is Test {
   // This contract is a useful case study for exposing the use of the binary search in solidity's
   // dispatcher. If there are 4 functions or less, the search is just linear, above that threshold
   // binary search is used.
