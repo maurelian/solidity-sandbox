@@ -1,0 +1,4 @@
+[profile.default]
+solc-version = "0.8.15"
+optimizer = false # faster compilation
+optimizer-runs = 10_000_000
