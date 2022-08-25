@@ -1,7 +1,7 @@
 #!/bin/bash
 
 num=0
-for file in $(ls src/test/*.sol) ; do
+for file in $(ls test/*.sol) ; do
     base=$(basename $file .sol)
     # get chars of basename before underscore
 
@@ -29,9 +29,9 @@ fi
 
 # Replace spaces with _
 newTest=${newTest// /_}
-newfile="src/test/${num}_${newTest}.sol"
+newfile="test/${num}_${newTest}.sol"
 
-cat src/test/0_Template.t.sol \
+cat test/0_Template.t.sol \
   | sed "s/TestX/Test$num/g" \
   | sed "s/test_X/test_$newTest/g" \
   > $newfile
