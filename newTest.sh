@@ -29,7 +29,7 @@ fi
 
 # Replace spaces with _
 newTest=${newTest// /_}
-newfile="test/${num}_${newTest}.sol"
+newfile="test/${num}_${newTest}.t.sol"
 
 cat test/0_Template.t.sol \
   | sed "s/TestX/Test$num/g" \
