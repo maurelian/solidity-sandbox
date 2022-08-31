@@ -1,6 +1,6 @@
 # Solidity Sandbox
 
-![Picture of a sandbox](sandbox.png)
+![Picture of a sandbox](./sandbox.png)
 
 Just a simple [forge](https://book.getfoundry.sh/forge/) based repo for playing around with and
 understanding solidity toy code.
