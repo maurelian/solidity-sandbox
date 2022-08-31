@@ -1,7 +1,11 @@
-Just a simple [forge](https://book.getfoundry.sh/forge/) based repo for playing around with and 
+# Solidity Sandbox
+
+![Picture of a sandbox](sandbox.png)
+
+Just a simple [forge](https://book.getfoundry.sh/forge/) based repo for playing around with and
 understanding solidity toy code.
 
-See how other's are using it: 
+See how other's are using it:
 - [maurelian's branch](https://github.com/maurelian/solidity-sandbox/tree/maurelian)
 - [devtooligan's fork](https://github.com/devtooligan/solidity-sandbox)
 
@@ -27,7 +31,7 @@ There's now a script to generate a new file with a contract and empty test funct
 ## Yul code
 
 Occasionally it's helpful to generate the Yul intermediate representation to understand what's
-happening underneath the hood. In that case, I'll just use a command like the following to 
+happening underneath the hood. In that case, I'll just use a command like the following to
 put the IR into the `./ir` dir. Using a `.sol` extension gives pretty decent syntax highlighting
 for readability.
 
