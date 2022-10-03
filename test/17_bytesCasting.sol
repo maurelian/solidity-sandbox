@@ -7,7 +7,7 @@ import "forge-std/Test.sol";
 contract Test17 is Test {
 
 
-    function test_casting() external {
+    function test_BytesCasting() external {
         bytes memory data = abi.encode(hex"abcdef");
         emit log_uint(data.length);
         uint32 len = uint32(data.length);
