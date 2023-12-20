@@ -2,3 +2,18 @@
 solc-version = "0.8.15"
 optimizer = false # faster compilation
 optimizer-runs = 10_000_000
+ignored_error_codes = [
+  1878,
+  5574,
+  2018,
+  2072,
+  5667,
+  9302,
+  5815,
+  3628,
+  2519,
+  8760,
+  6321,
+  5740,
+  3420,
+]
